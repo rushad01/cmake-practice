@@ -1,0 +1,10 @@
+{
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+  "clangd.arguments": [
+    "--enable-config",
+    "-log=verbose",
+    "-pretty",
+    "--background-index"
+  ]
+}
