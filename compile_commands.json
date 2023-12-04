@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/Practice/C++/Projects/cmake-practice/build",
-  "command": "C:\\PROGRA~1\\MinGW\\bin\\G__~1.EXE -ID:/Practice/C++/Projects/cmake-practice/src/include -g -std=c++11 -o CMakeFiles\\cmake-practice.dir\\src\\main.cpp.obj -c D:\\Practice\\C++\\Projects\\cmake-practice\\src\\main.cpp",
-  "file": "D:\\Practice\\C++\\Projects\\cmake-practice\\src\\main.cpp"
-}
-]

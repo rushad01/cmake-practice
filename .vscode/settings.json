@@ -1,10 +1,17 @@
 {
   "C_Cpp.intelliSenseEngine": "disabled",
-  "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+  //"C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin",
+  //"clangd.path": "C:\\Program Files\\LLVM\\bin",
+  "editor.inlayHints.enabled": "on",
+  //"cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
   "clangd.arguments": [
     "--enable-config",
-    "-log=verbose",
-    "-pretty",
-    "--background-index"
-  ]
+    "--background-index",
+    "--log=verbose",
+    "--pretty",
+    "--compile-commands-dir=${workspaceFolder}/build/"
+  ],
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+  }
 }

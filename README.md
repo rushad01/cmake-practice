@@ -28,3 +28,12 @@ cmake -DOPTION_NAME=ON ..
 ```
 
 The project will be built using the given feature enabled. Options needed to be explicitly declared in CMakeLists file for building.
+
+## Selecting Generator
+
+We can use microsoft or gcc for generating a project from command line using cmake.
+
+```
+cmake -G"Visual Studio 16 2019" //Microsoft Toolchain
+cmake -G "Unix Makefiles" . //Unix Makefile
+```
