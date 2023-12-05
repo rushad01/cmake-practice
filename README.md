@@ -37,3 +37,22 @@ We can use microsoft or gcc for generating a project from command line using cma
 cmake -G"Visual Studio 16 2019" //Microsoft Toolchain
 cmake -G "Unix Makefiles" . //Unix Makefile
 ```
+
+## Dependency Management
+
+There are multiple ways to manage dependency in C/C++ as their standard doesn't define standard for managing dependancy.
+
+- Using github submodule to fetch a repo directly from github and include it into current repo
+- Using package manager like [conan](https://conan.io/),[xmake-xrepo](https://xrepo.xmake.io/#/),[vcpkg](https://vcpkg.io/en/),[cpm.cmake package manager](https://github.com/cpm-cmake/CPM.cmake)
+
+In this template I will use [cpm](https://github.com/cpm-cmake/CPM.cmake) as a package manager.
+
+Do not use multiple dependency manager for one project. As this will lead to more problem in run.
+
+## Adding CPM
+
+From [cpm](https://github.com/cpm-cmake/CPM.cmake) repo download cpm.cmake and add it to project directory. Then specify the directory using `include()` function. For more detail read [cpm](https://github.com/cpm-cmake/CPM.cmake) repository.
+
+## Issue
+
+For vscode `clangd` LSP(Language Server Protocol) from `LLVM` directory doesn't bootup and original issue for this has no solution currently. But `clangd` plugin from `Visual Studio Code Marketplace` works perfectly. This issue is only for Windows. I didn't check Linux.
